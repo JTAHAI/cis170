@@ -6,6 +6,7 @@ public class HelloWorld
 	// 1. Actions. Methods.
 	// 2. Attributes. Variables.
 	private String name = "Justin";
+	private String lastName = "Tahai";
 	
 	// main method. Starts the program.
 	//Method signature - What makes this method unique. Defines the method.
@@ -13,6 +14,6 @@ public class HelloWorld
 	{
 		// Prints to the console.
 		System.out.println("Hello World");
-		System.out.println("My first java app!!!");
+
 	}
 }
