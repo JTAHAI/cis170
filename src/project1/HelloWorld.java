@@ -14,6 +14,7 @@ public class HelloWorld
 	{
 		// Prints to the console.
 		System.out.println("Hello World");
+		System.out.println("Sent from home.");
 
 	}
 }
