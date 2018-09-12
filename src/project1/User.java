@@ -45,8 +45,4 @@ public class User
 	{
 		this.lastName = lastName;
 	}
-	public static void main(String[] args)
-	{
-		
-	}
 }
