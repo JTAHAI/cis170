@@ -12,6 +12,12 @@ public class HelloWorld
 	//Method signature - What makes this method unique. Defines the method.
 	public static void main(String[] args) 
 	{
+		HelloWorld hw = new HelloWorld();
+		hw.sayHello();
+	}
+	//This method says Hello when called.
+	private void sayHello()
+	{
 		// Prints to the console.
 		System.out.println("Hello, World!");
 		System.out.println("Sent from home.");
