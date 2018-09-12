@@ -13,7 +13,7 @@ public class HelloWorld
 	public static void main(String[] args) 
 	{
 		// Prints to the console.
-		System.out.println("Hello World");
+		System.out.println("Hello, World!");
 		System.out.println("Sent from home.");
 		System.out.print("Program written by ");
 		System.out.print(name);
