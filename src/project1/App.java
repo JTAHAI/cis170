@@ -70,9 +70,20 @@ public class App
 		// for loop
 		for(int x = 0; x < 100; x++)
 		{
+			/* prompt user to guess a letter
+			 * prompt user with mask of word (recalculate mask)
+			 * prompt user with hint
+			 * collect user input
+			 * repeat.....
+			 */
 			System.out.println(x);
 		}
 
+	}
+	//ask mike how the heck to do this...
+	private void generateMask()
+	{
+		// print the word of now
 	}
 
 }
