@@ -37,7 +37,6 @@ public class Loops
 	{
 		
 	//create initial mask
-
 		for(int i = 0; i < gameWord.length(); i++)
 		{
 			System.out.print("*");
