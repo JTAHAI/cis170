@@ -29,6 +29,9 @@ public class App
 		for(int i = 0; i < gArray.length; i++)
 		{
 		Game g = gArray[i];
+		// number of allowed guesses
+		int guessCount = 6;
+		
 		
 		// Repeat while not solved
 		while(!g.isSolved() && guessCount > 0)
