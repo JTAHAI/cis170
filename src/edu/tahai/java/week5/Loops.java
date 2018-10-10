@@ -3,16 +3,23 @@ package edu.tahai.java.week5;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Loops 
 {
+	Scanner scanner = new Scanner(System.in);
+
+	
 	int i = 0;
 	int g = 5;
 	
 	//create word array
 	String[] wordsArr = {"HORSE", "CAR", "HOME", "SCHOOL", "JAVA", "COMPUTER", "SCIENCE"};
 	
+	//create hint array
+	String[] hintArr = {"SADDLE", "BEEP", "LIVE", "LEARN", "LANGUAGE", "BINARY", "EXPERIMENT"};
+	
 	//create guessed letter array
-	String[] guessedLetters = {};
+	String[] guessedLetters;
 	
 	//generate random number
 	Random rand = new Random();
@@ -20,8 +27,9 @@ public class Loops
 	
 	//choose and then store a word from word array as variable for current game using random number
 	String gameWord = wordsArr[n];
+	//use same number to store hint in variable
+	String gameHint = hintArr[n];
 
-	Scanner scanner = new Scanner(System.in);
 
 	//create mask
 	
@@ -38,14 +46,15 @@ public class Loops
 	
 	public void inputLoop()
 	{
+		
 		//prompt user to guess a letter
 		System.out.println();
+		System.out.println("Your hint is: " + gameHint);	
 		System.out.println("Guess a letter: ");
-
+		
 	    while (!scanner.hasNext("[A-Za-z]+")) 
 	    {
-	        System.out.println("Letters only! Guess a letter:");
-	        scanner.nextLine();
+	    	System.out.println("Letters only! Guess a letter:");
 	    }
 
 	}
@@ -57,7 +66,8 @@ public class Loops
 
 		
 	//check if user input is contained in gameWord
-	    if(gameWord.contains(scanner.next()))
+    	String letter = scanner.nextLine();
+	    if(gameWord.contains(letter))
 	    {
 	        System.out.println("You got a letter!");
 	    }
